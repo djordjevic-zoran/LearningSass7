@@ -1,4 +1,6 @@
 
+$default-bg: $light-gray;
+
 img{
     max-width: 100%;
 }
@@ -18,4 +20,8 @@ html{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
+}
+body{
+    font-size: 1.6rem;
+    background-color: $default-bg;
 }
