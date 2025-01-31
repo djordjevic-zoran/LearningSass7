@@ -331,7 +331,37 @@ body {
   background-color: #eeeeee; }
 
 header {
-  padding: 30px 0; }
+  padding: 30px 0;
+  background-color: #f20fee; }
+  header .branding {
+    text-align: center; }
+    header .branding a {
+      color: #ffffff; }
+  header ul {
+    list-style: none;
+    padding-left: 0; }
+    header ul li a {
+      display: block;
+      color: #ffffff;
+      text-align: center;
+      font-family: "Josefin Sans", serif;
+      font-weight: 700; }
+      header ul li a:hover, header ul li a.active {
+        color: #0ff231; }
+
+@media (min-width: 768px) {
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .container ul {
+      display: flex; }
+      header .container ul li a {
+        padding: 5px; } }
+
+@media (min-width: 992px) {
+  header .container ul li a {
+    padding: 5px 15px; } }
 
 /*
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
