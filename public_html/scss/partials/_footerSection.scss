@@ -5,8 +5,10 @@ $footer-nav-font: $josefin;
 $footer-nav-link: $green;
 
 footer{
-    padding: 30px 0;
-    background-color: $footer-bg;
+/*    padding: 30px 0;
+    background-color: $footer-bg;*/
+
+@include zoran(30px, 30px, $footer-bg);
     
     ul{
         list-style: none;

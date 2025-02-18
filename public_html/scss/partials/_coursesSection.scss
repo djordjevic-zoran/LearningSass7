@@ -9,7 +9,7 @@ $tbody-hover-bg: darken($cyan, 20%);
 
 
 .coursesSection{
-    padding: 50px 0;
+    @include zoran(30px, 30px, transparent);
     
     table{
         border: $courses-border;
