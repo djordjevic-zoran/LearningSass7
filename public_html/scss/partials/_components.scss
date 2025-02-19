@@ -23,30 +23,30 @@ $btn-purple: $purple;
 .btn-green{
     @extend %btn;
     background-color: $btn-green;
-    color: $btn-default-color;
+    color: comfort($btn-green);
 }
 .btn-dark{
     @extend %btn;
     background-color: $btn-dark;
-    color: $btn-default-color;
+    color: comfort($btn-dark);
 }
 .btn-cyan{
     @extend %btn;
     background-color: $btn-cyan;
-    color: $btn-default-color;
+    color: comfort($btn-cyan);
 }
 .btn-yellow{
     @extend %btn;
     background-color: $btn-yellow;
-    color: $btn-dark-color;
+    color: comfort($btn-yellow);
 }
 .btn-blue{
     @extend %btn;
     background-color: $btn-blue;
-    color: $btn-default-color;
+    color: comfort($btn-blue);
 }
 .btn-purple{
     @extend %btn;
     background-color: $btn-purple;
-    color: $btn-default-color;
+    color: comfort($btn-purple);
 }
