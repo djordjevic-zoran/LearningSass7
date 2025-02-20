@@ -1,12 +1,22 @@
 
 $btn-default-color: $white;
-$btn-dark-color: $black;
+/*$btn-dark-color: $black;
 $btn-green: $green;
 $btn-dark: $dark-gray;
 $btn-cyan: $cyan;
 $btn-yellow: $yellow;
 $btn-blue: $blue;
-$btn-purple: $purple;
+$btn-purple: $purple;*/
+
+$huawei: (
+'green'   : $green,
+'dark'     : $dark-gray,
+'cyan'    : $cyan,
+'yellow'  : $yellow,
+'blue'     : $blue,
+'purple' : $purple,
+'orange' : $orange
+);
 
 
 %btn{
@@ -20,7 +30,19 @@ $btn-purple: $purple;
     text-transform: uppercase;
 }
 
-.btn-green{
+@each $key, $value in $huawei{
+    .btn-#{$key}{
+        @extend %btn;
+        background-color: $value;
+        color: comfort($value);
+        
+        &:hover{
+            background-color: darken($value, 10%);
+        }
+    }
+}
+
+/*.btn-green{
     @extend %btn;
     background-color: $btn-green;
     color: comfort($btn-green);
@@ -49,4 +71,4 @@ $btn-purple: $purple;
     @extend %btn;
     background-color: $btn-purple;
     color: comfort($btn-purple);
-}
+}*/

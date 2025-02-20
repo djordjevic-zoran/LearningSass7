@@ -1,10 +1,17 @@
+/*$btn-dark-color: $black;
+$btn-green: $green;
+$btn-dark: $dark-gray;
+$btn-cyan: $cyan;
+$btn-yellow: $yellow;
+$btn-blue: $blue;
+$btn-purple: $purple;*/
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-.btn-green, .btn-dark, .btn-cyan, .btn-yellow, .btn-blue, .btn-purple {
+.btn-green, .btn-dark, .btn-cyan, .btn-yellow, .btn-blue, .btn-purple, .btn-orange {
   display: inline-block;
   padding: 15px 25px;
   /*    border-radius: 10px;*/
   /*@include radius(30px);*/
-  border-radius: 0px;
+  border-radius: 40px 5px 40px 5px;
   border: none;
   font-size: 1.8rem;
   text-transform: uppercase; }
@@ -12,27 +19,75 @@
 .btn-green {
   background-color: #0ff231;
   color: #f2b20f; }
+  .btn-green:hover {
+    background-color: #0bc326; }
 
 .btn-dark {
   background-color: #444444;
   color: #fcf403; }
+  .btn-dark:hover {
+    background-color: #2b2b2b; }
 
 .btn-cyan {
   background-color: #03f8fc;
   color: #f2b20f; }
+  .btn-cyan:hover {
+    background-color: #02c6ca; }
 
 .btn-yellow {
   background-color: #fcf403;
   color: #f2b20f; }
+  .btn-yellow:hover {
+    background-color: #cac302; }
 
 .btn-blue {
   background-color: #031cfc;
   color: #fcf403; }
+  .btn-blue:hover {
+    background-color: #0216ca; }
 
 .btn-purple {
   background-color: #f20fee;
   color: #fcf403; }
+  .btn-purple:hover {
+    background-color: #c30bc0; }
 
+.btn-orange {
+  background-color: #f2b20f;
+  color: #f2b20f; }
+  .btn-orange:hover {
+    background-color: #c38f0b; }
+
+/*.btn-green{
+    @extend %btn;
+    background-color: $btn-green;
+    color: comfort($btn-green);
+}
+.btn-dark{
+    @extend %btn;
+    background-color: $btn-dark;
+    color: comfort($btn-dark);
+}
+.btn-cyan{
+    @extend %btn;
+    background-color: $btn-cyan;
+    color: comfort($btn-cyan);
+}
+.btn-yellow{
+    @extend %btn;
+    background-color: $btn-yellow;
+    color: comfort($btn-yellow);
+}
+.btn-blue{
+    @extend %btn;
+    background-color: $btn-blue;
+    color: comfort($btn-blue);
+}
+.btn-purple{
+    @extend %btn;
+    background-color: $btn-purple;
+    color: comfort($btn-purple);
+}*/
 /*  FONTS  */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
